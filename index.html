@@ -22,48 +22,48 @@
          referrerpolicy="no-referrer"
       />
 
-      <link rel="stylesheet" href="./css/styles.css" />
+      <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+      <link rel="stylesheet" href="./css/main.min.css" />
    </head>
-
    <body>
       <header class="header">
          <div class="container">
-            <nav class="header-nav">
-               <a href="index.html" lang="en" class="logo link">
+            <nav class="nav header__nav">
+               <a href="index.html" lang="en" class="logo header__logo link">
                   <span class="accent">Web</span>Studio</a
                >
 
-               <ul class="nav-list list">
-                  <li class="item">
-                     <a class="nav-link link current" href="./index.html"
+               <ul class="pages header__pages list">
+                  <li class="pages__item">
+                     <a class="pages__link link current" href="./index.html"
                         >Студія</a
                      >
                   </li>
-                  <li class="item">
-                     <a class="nav-link link" href="./portfolio.html"
+                  <li class="pages__item">
+                     <a class="pages__link link" href="./portfolio.html"
                         >Портфоліо</a
                      >
                   </li>
-                  <li class="item">
-                     <a class="nav-link link" href="/">Контакти</a>
+                  <li class="pages__item">
+                     <a class="pages__link link" href="/">Контакти</a>
                   </li>
                </ul>
 
-               <ul class="nav-contact list">
-                  <li class="item">
+               <ul class="contacts header__contacts list">
+                  <li class="contacts__item">
                      <a
-                        class="header-mail link"
+                        class="contacts__data link"
                         href="mailto:info@devstudio.com"
                      >
-                        <svg class="mail-icon">
+                        <svg class="contacts__mail">
                            <use href="./img/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com
                      </a>
                   </li>
                   <li class="item">
-                     <a class="header-tel link" href="tel:+380961111111">
-                        <svg class="smartphone-icon">
+                     <a class="contacts__data link" href="tel:+380961111111">
+                        <svg class="contacts__smartphone">
                            <use href="./img/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -75,10 +75,10 @@
       </header>
 
       <main>
-         <section class="hero-section">
+         <section class="hero">
             <div class="container hero-box">
-               <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-               <button class="hero-btn" type="button" data-modal-open>
+               <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+               <button class="hero__btn" type="button" data-modal-open>
                   Замовити послугу
                </button>
             </div>
@@ -86,52 +86,52 @@
 
          <section class="benefits section">
             <div class="container">
-               <h2 hidden>Наші переваги</h2>
-               <ul class="list benefits-list">
-                  <li class="item icon-antenna">
-                     <div class="benefit-icon-box">
-                        <svg class="benefit-item">
+               <h2 class="visually-hidden">Наші переваги</h2>
+               <ul class="benefits__list list">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap">
+                        <svg class="benefits__icon">
                            <use href="./img/icons.svg#icon-antenna"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                     <p class="benefits-sub-title">
+                     <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                     <p class="benefits__dcr">
                         Ідейні міркування, і навіть початок повсякденної роботи
                         з формування позиції.
                      </p>
                   </li>
-                  <li class="item icon-clock">
-                     <div class="benefit-icon-box">
-                        <svg class="benefit-item">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap">
+                        <svg class="benefits__icon">
                            <use href="./img/icons.svg#icon-clock"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h3>
-                     <p class="benefits-sub-title">
+                     <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
+                     <p class="benefits__dcr">
                         Завдання організації, особливо рамки і місце навчання
                         кадрів тягне у себе.
                      </p>
                   </li>
-                  <li class="item icon-diagram">
-                     <div class="benefit-icon-box">
-                        <svg class="benefit-item">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap">
+                        <svg class="benefits__icon">
                            <use href="./img/icons.svg#icon-diagram"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">ПЛАНУВАННЯ</h3>
-                     <p class="benefits-sub-title">
+                     <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
+                     <p class="benefits__dcr">
                         Так само консультація з широким активом значною мірою
                         зумовлює.
                      </p>
                   </li>
-                  <li class="item icon-astronaut">
-                     <div class="benefit-icon-box">
-                        <svg class="benefit-item">
+                  <li class="benefits__item">
+                     <div class="benefits__wrap">
+                        <svg class="benefits__icon">
                            <use href="./img/icons.svg#icon-astronaut"></use>
                         </svg>
                      </div>
-                     <h3 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                     <p class="benefits-sub-title">
+                     <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                     <p class="benefits__dcr">
                         Значимість цих проблем настільки очевидна, що реалізація
                         планових завдань.
                      </p>
@@ -140,41 +140,41 @@
             </div>
          </section>
 
-         <section class="section work-section">
-            <div class="container work-section">
-               <h2 class="work-title">Чим ми займаємося</h2>
-               <ul class="list work-list">
-                  <li class="item">
+         <section class="section work">
+            <div class="container work">
+               <h2 class="work__title">Чим ми займаємося</h2>
+               <ul class="work__list list">
+                  <li class="work__item">
                      <img
                         src="./img/studio1.jpg"
                         alt="Робота з технологією"
                         width="370"
                         height="294"
                      />
-                     <div class="work-info">
-                        <p class="work-info-text">Десктопні додатки</p>
+                     <div class="work__info">
+                        <p class="work__text">Десктопні додатки</p>
                      </div>
                   </li>
-                  <li class="item">
+                  <li class="work__item">
                      <img
                         src="./img/studio2.jpg"
                         alt="Робота з технологією"
                         width="370"
                         height="294"
                      />
-                     <div class="work-info">
-                        <p class="work-info-text">Мобільні додатки</p>
+                     <div class="work__info">
+                        <p class="work__text">Мобільні додатки</p>
                      </div>
                   </li>
-                  <li class="item">
+                  <li class="work__item">
                      <img
                         src="./img/studio3.jpg"
                         alt="Робота з технологією"
                         width="370"
                         height="294"
                      />
-                     <div class="work-info">
-                        <p class="work-info-text">Дизайнерські рішення</p>
+                     <div class="work__info">
+                        <p class="work__text">Дизайнерські рішення</p>
                      </div>
                   </li>
                </ul>
@@ -515,8 +515,8 @@
                   <a href="index.html" lang="en" class="footer-logo link">
                      <span class="accent">Web</span>Studio</a
                   >
-                  <address class="address">
-                     <ul class="list address-list">
+                  <address class="footer-address">
+                     <ul class="list footer-address-list">
                         <li class="item">
                            <a
                               href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
@@ -579,7 +579,7 @@
                </div>
             </div>
 
-            <form class="studio-form">
+            <form class="footer-studio-form">
                <label for="email" class="footer-lable"
                   >Підпишіться на розсилку</label
                >
@@ -676,6 +676,7 @@
                      type="checkbox"
                      id="checkbox"
                      class="modal-condition-input visually-hidden"
+                     required
                   />
 
                   <label for="checkbox" class="checkbox">
